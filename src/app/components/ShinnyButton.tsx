@@ -1,9 +1,11 @@
 import { cn } from "@/utils"
 import { ArrowRight } from "lucide-react"
 import Link from "next/link"
-import { AnchorHTMLAttributes } from "react"
+import { AnchorHTMLAttributes, ReactNode } from "react"
 
-interface ShinyButtonProps extends AnchorHTMLAttributes<HTMLAnchorElement> {}
+interface ShinyButtonProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
+  children: ReactNode
+}
 
 export const ShinyButton = ({
   className,
